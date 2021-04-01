@@ -204,7 +204,7 @@ export default {
     // 点击确定 添加新用户
     addUser () {
       this.$refs.addFormRef.validate(async valid => {
-        console.log(valid) // valid=true or false
+        console.log(valid) // valid==true or false
         if (valid) { // valid==true 预校验通过
           // 可以发起添加用户的网络请求
           const { data: res } = await this.$http.post('users', this.addForm)
