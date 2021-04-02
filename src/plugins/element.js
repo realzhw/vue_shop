@@ -24,7 +24,9 @@ import {
   Tooltip,
   Pagination,
   Dialog,
-  MessageBox
+  MessageBox,
+  Tag,
+  DatePicker
 } from 'element-ui'
 
 Vue.use(Button)
@@ -50,5 +52,7 @@ Vue.use(Switch)
 Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(DatePicker)
 Vue.prototype.$message = Message // 挂载为Vue原型上的一个属性
 Vue.prototype.$confirm = MessageBox.confirm
