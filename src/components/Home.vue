@@ -4,9 +4,9 @@
     <!-- 基于token的方式实现退出，只需要销毁本地的token。
         这样，后续的请求就不会携带token，必须重新登录生成一个新的token才可以 -->
     <!-- 头部区域 -->
-    <el-header>
-      <div>
-        <img height="55px" src="../assets/niu.jpg" alt="" />
+    <el-header style="height: 60px">
+      <div class="logo">
+        <img height="55px" src="../assets/logo.png" alt="" />
         <span>电商后台管理系统</span>
       </div>
       <div class="date-text">当前时间：{{ realTime.yy }}年{{ realTime.mm }}月{{ realTime.dd }}日
@@ -139,15 +139,18 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.logo {
+  margin-left: 50px;
+}
 .home-container {
   height: 100%;
 }
 .date-text {
   text-align: center;
-  margin-right: 50px;
+  margin-right: 100px;
 }
 .el-header {
-  background-color: #373d41;
+  background-color: #34383c;
   padding-left: 0;
   display: flex;
   justify-content: space-between;
@@ -164,6 +167,7 @@ export default {
 }
 .el-aside {
   background-color: #333744;
+  //background-image: url('/Users/zhanghaowei/VueProjects/vueTest/vue_shop/src/assets/aa.jpg');
   .el-menu {
     border-right: none; // 没有边框线
   }

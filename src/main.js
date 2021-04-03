@@ -4,6 +4,7 @@ import router from './router'
 import './plugins/element.js'
 import './assets/css/global.css'
 import axios from 'axios'
+import TreeTable from 'vue-table-with-tree-grid'
 
 axios.defaults.baseURL = 'https://www.liulongbin.top:8888/api/private/v1/' // 配置请求的根路径
 axios.interceptors.request.use(config => {
@@ -14,6 +15,8 @@ axios.interceptors.request.use(config => {
 Vue.prototype.$http = axios // 使每个组件通过this都能访问到$http 从而发起ajax请求
 
 Vue.config.productionTip = false
+
+Vue.component('tree-table', TreeTable)
 
 new Vue({
   router,

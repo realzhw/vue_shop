@@ -1,6 +1,5 @@
 <template> <!--模板区-->
     <div class="login_container">
-        登录组件
         <div class="login_box">
             <!-- 头像区域 -->
             <div class="avatar_box">
@@ -51,7 +50,6 @@ export default {
   methods: {
     // 重置登录表单
     resetLoginForm () {
-      console.log(this)
       this.$refs.loginFormRef.resetFields()
     },
     login () {
@@ -83,8 +81,10 @@ export default {
 
 <style lang="less" scoped> //支持less语法 scoped用于控制样式生效的区间  加上scoped表示此样式只对本组件生效
 .login_container{
-    background-color: #1e3d5c;
+    background-image: url('../assets/bgimg.jpg');
+    // background-color: #1e3d5c;
     height: 100%;
+    width: 100%;
 }
 .login_box{
     width: 450px;
